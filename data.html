@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <p style="margin-top: 15px;"><span style="color: green;">DATA</span> <span style="color: maroon;">MAHASISWA</span> <span style="color: aqua;">II</span></p>
+    </div>
+    <div class="welcome-message">
+        <h2 id="welcome-text"></h2>
+    </div>
+    <div class="clock" id="clock"></div>
+    <hr>
+    <p style="color: rgba(71, 71, 69, 0.918);">Usaha keras tidak akan mengkhianati hasil.</p>
+    <hr>
+    <br>
+    <form id="studentForm">
+        <div class="form-group">
+            <label for="nimInput">NIM</label>
+            <input type="text" id="nimInput" placeholder="Nomor Induk Mahasiswa" pattern="[0-9]+" required>
+        </div>
+        <div class="form-group">
+            <label for="namaInput">Nama</label>
+            <input type="text" id="namaInput" placeholder="Nama Lengkap" required>
+        </div>
+        <div class="form-group">
+            <label for="alamatInput">Alamat</label>
+            <input type="text" id="alamatInput" placeholder="Alamat yang ditempati saat ini" pattern="[A-Za-z ]+" required>
+        </div>
+        <div class="button-container">
+            <button type="button" onclick="addData()"><i class="fa-solid fa-plus"></i> Tambah</button>
+            <button type="button" id="resetBtn" onclick="resetForm()"><i class="fa-solid fa-rotate-left"></i> Reset</button>
+        </div>
+    </form>
+<br>
+<hr>
+<div id="data-table">
+    <table id="table">
+        <thead>
+            <tr>
+                <th onclick="sortTable(0)">NIM  <i class="fa-solid fa-sort"></i></th>
+                <th onclick="sortTable(1)">Nama  <i class="fa-solid fa-sort"></i></th>
+                <th onclick="sortTable(2)">Alamat  <i class="fa-solid fa-sort"></i></th>
+                <th colspan="2" style="cursor: auto;">Action</th>
+            </tr>
+        </thead>
+        <tbody id="table-body">
+        </tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

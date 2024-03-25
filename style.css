@@ -1,0 +1,257 @@
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: black;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.submitbtn {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 19px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #141e30;
+  background: transparent;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: color 0.3s, border-color 0.3s, background-color 0.3s,
+    box-shadow 0.3s;
+}
+
+.submitbtn:hover {
+  color: #fff;
+  border-color: #787676;
+  background-color: #787676;
+  border-width: 1px;
+  box-shadow: 0 0 10px 0 #4d4d4e;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: black;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: black;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #787676;
+  font-size: 12px;
+}
+
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #5f6161;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 40px;
+  letter-spacing: 4px;
+}
+
+.login-box a:hover {
+  background: #787676;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #4d4d4e, 0 0 25px #4d4d4e, 0 0 50px #4d4d4e,
+    0 0 100px #4d4d4e;
+}
+
+.login-box a span {
+  position: absolute;
+  display: block;
+}
+
+.form-group {
+  margin-bottom: 15px; 
+  display: flex;
+  align-items: center; 
+}
+
+.form-group label {
+  width: 100px; 
+  text-align: left; 
+  margin-right: 10px; 
+  margin-left: 10px; 
+}
+
+.form-group input[type="text"] {
+  padding: 5px;
+  font-size: 16px;
+  width: 100%;
+  margin-right: 50px; 
+}
+
+.button-container {
+  margin-top: 20px; 
+  display: flex; 
+  justify-content: flex-end; 
+  margin-right: 20px;
+}
+
+.button-container button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 10px; 
+}
+
+.button-container button:not(:last-child) {
+  margin-right: 10px; 
+}
+
+.button-container button:hover {
+  background-color: #0056b3;
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 0.5px 0;
+  text-align: left;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: large;
+}
+
+#welcome-text {
+  margin-left: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: medium;
+}
+
+.welcome-message {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: medium;
+  color: grey;
+}
+
+.clock {
+  position: absolute;
+  top: 75px;
+  right: 13px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: medium;
+  color: grey;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  margin-left: 10px;
+  margin-top: 10px;
+  color: navajowhite;
+}
+
+hr {
+  margin-top: 1px;
+}
+
+#data-table {
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: white;
+}
+
+
+td button {
+  display: block;
+  margin: 0 auto;
+  border: none;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin: 0;
+}
+
+th {
+  text-align: left;
+  background-color: grey;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border-collapse: collapse;
+  border: 1px solid white ;
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+td button:hover {
+  background-color: #ddd;
+}
+
+td button.edit-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+td button.delete-button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
